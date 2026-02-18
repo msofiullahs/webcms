@@ -1,0 +1,23 @@
+{
+    "name": "Modern",
+    "description": "Bold and contemporary theme with vibrant purple colors, rounded corners, and larger typography.",
+    "version": "1.0.0",
+    "author": "WebCMS",
+    "colors": {
+        "primary": "#8B5CF6",
+        "primary_dark": "#7C3AED",
+        "secondary": "#F59E0B",
+        "secondary_dark": "#D97706"
+    },
+    "fonts": {
+        "heading": "Inter",
+        "body": "Inter"
+    },
+    "css": [
+        "css/theme.css",
+        "css/header.css",
+        "css/footer.css",
+        "css/blocks.css",
+        "css/pages.css"
+    ]
+}

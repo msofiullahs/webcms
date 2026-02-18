@@ -1,0 +1,42 @@
+/*
+ * Modern Theme — Page & Post Layout Overrides
+ *
+ * Customizes the overall page/post layout, typography scale, and spacing.
+ */
+
+/* Larger heading sizes */
+h1 { font-size: clamp(2rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
+
+/* Post index — tighter card grid */
+.post-card {
+    border-radius: var(--radius-xl);
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Contact form inputs — more rounded */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    border-radius: var(--radius-md) !important;
+    border-color: #D1D5DB;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 3px rgb(139 92 246 / 0.15) !important;
+}
+
+/* Pagination links */
+nav[aria-label] a {
+    border-radius: var(--radius-md);
+}

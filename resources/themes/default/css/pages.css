@@ -1,0 +1,34 @@
+/*
+ * Default Theme — Page & Post Styles
+ *
+ * Override these styles to customize the layout of blog posts,
+ * post index pages, single post views, and static pages.
+ *
+ * Pages:
+ *   - Home (/)           — renders blocks from selected homepage
+ *   - Blog (/posts)      — paginated post grid
+ *   - Post (/posts/slug) — single post with featured image + content
+ *   - Page (/{slug})     — blocks rendered via BlockRenderer
+ *   - Contact (/contact) — contact form page
+ */
+
+/* Post card styling on blog index */
+.post-card {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Single post featured image */
+.post-featured-image {
+    border-radius: var(--radius-xl);
+}
+
+/* Post meta (author, date) */
+.post-meta {
+    color: #6B7280;
+}

@@ -1,0 +1,11 @@
+/*
+ * Default Theme — Footer Styles
+ *
+ * Override these styles to customize the site footer,
+ * footer navigation, and copyright area.
+ */
+
+/* Footer link hover */
+footer a:hover {
+    color: var(--color-primary);
+}

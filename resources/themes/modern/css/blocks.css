@@ -1,0 +1,64 @@
+/*
+ * Modern Theme — Block Style Overrides
+ *
+ * Demonstrates how themes can completely restyle page builder blocks.
+ * This file overrides the default look of Hero, CTA, post cards, etc.
+ */
+
+/* Hero block — purple gradient instead of blue */
+section.relative.bg-gradient-to-br {
+    background: linear-gradient(135deg, #7C3AED 0%, #EC4899 50%, #F59E0B 100%) !important;
+}
+
+/* CTA block — gradient background */
+section.bg-gray-50:has(a[href]) {
+    background: linear-gradient(135deg, #F5F3FF, #EDE9FE) !important;
+}
+
+.dark section.bg-gray-50:has(a[href]) {
+    background: linear-gradient(135deg, #1F2937, #1a1a2e) !important;
+}
+
+/* Post article cards — larger border radius, subtle purple border on hover */
+article {
+    border-radius: var(--radius-xl) !important;
+    transition: all 0.3s ease !important;
+}
+
+article:hover {
+    border-color: var(--color-primary-light, #C4B5FD) !important;
+    box-shadow: var(--shadow-lg) !important;
+    transform: translateY(-4px);
+}
+
+/* Buttons — more rounded, bolder */
+a[class*="bg-[var(--color-primary"]],
+button[class*="bg-[var(--color-primary"]] {
+    border-radius: 9999px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.025em;
+}
+
+/* Prose links */
+.prose a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary-light);
+    text-underline-offset: 3px;
+}
+
+.prose a:hover {
+    color: var(--color-primary-dark);
+    text-decoration-color: var(--color-primary);
+}
+
+/* Image blocks — more shadow, bigger radius */
+figure img {
+    border-radius: var(--radius-xl) !important;
+    box-shadow: var(--shadow-md);
+}
+
+/* Gallery — hover overlay effect */
+figure {
+    border-radius: var(--radius-xl) !important;
+}

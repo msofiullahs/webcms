@@ -1,0 +1,24 @@
+/*
+ * Modern Theme — Footer Styles
+ *
+ * Darker footer with gradient accent.
+ */
+
+footer {
+    background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+    border-top: 3px solid var(--color-primary);
+    color: #D1D5DB;
+}
+
+footer a {
+    color: #D1D5DB !important;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--color-primary-light, #C4B5FD) !important;
+}
+
+footer p {
+    color: #9CA3AF !important;
+}

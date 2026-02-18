@@ -1,0 +1,36 @@
+/*
+ * Default Theme — Block Styles
+ *
+ * Override these styles to customize how page builder blocks render.
+ * Each block type has a section element you can target.
+ *
+ * Block types and their structure:
+ *   - Hero Block:         section with gradient background, h1, subtitle, CTA button
+ *   - Text Block:         section > .prose (uses @tailwindcss/typography)
+ *   - Image Block:        section > figure > img + figcaption
+ *   - Gallery Block:      section > grid of figure > img
+ *   - CTA Block:          section with gray bg, h2, description, button
+ *   - Contact Form Block: section with gray bg, form with inputs
+ *   - Latest Posts Block:  section > grid of article cards
+ *   - Columns Block:      section > .grid with child columns
+ *
+ * Tip: Use the [data-block] attribute if you add it, or target
+ * by the component's class structure.
+ */
+
+/* CTA and Contact Form buttons use --color-primary */
+/* Hero gradient — override to change the hero look */
+
+/* Post cards */
+article:hover {
+    box-shadow: var(--shadow-md);
+}
+
+/* Prose content links */
+.prose a {
+    color: var(--color-primary);
+}
+
+.prose a:hover {
+    color: var(--color-primary-dark);
+}

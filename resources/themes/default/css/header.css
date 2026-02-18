@@ -1,0 +1,21 @@
+/*
+ * Default Theme — Header Styles
+ *
+ * Override these styles to customize the site header,
+ * navigation, logo area, and mobile menu.
+ */
+
+/* Main header bar */
+.theme-header {
+    /* Default uses white bg with subtle shadow — no overrides needed */
+}
+
+/* Navigation link hover effect */
+header nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Dropdown menu */
+header .group > div {
+    border-radius: var(--radius-lg);
+}

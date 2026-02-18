@@ -1,0 +1,35 @@
+/*
+ * Modern Theme — Global Variables & Base Styles
+ *
+ * Bold purple-based color scheme with larger text and rounded shapes.
+ */
+
+:root {
+    --color-primary: #8B5CF6;
+    --color-primary-dark: #7C3AED;
+    --color-primary-light: #C4B5FD;
+    --color-secondary: #F59E0B;
+    --color-secondary-dark: #D97706;
+    --color-accent: #EC4899;
+
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+
+    --shadow-sm: 0 2px 4px 0 rgb(0 0 0 / 0.06);
+    --shadow-md: 0 6px 12px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 15px 30px -5px rgb(0 0 0 / 0.12);
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+}

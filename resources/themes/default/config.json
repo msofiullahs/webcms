@@ -1,0 +1,23 @@
+{
+    "name": "Default",
+    "description": "Clean, minimal theme with a modern aesthetic. Uses blue primary colors and Inter font.",
+    "version": "1.0.0",
+    "author": "WebCMS",
+    "colors": {
+        "primary": "#3B82F6",
+        "primary_dark": "#2563EB",
+        "secondary": "#10B981",
+        "secondary_dark": "#059669"
+    },
+    "fonts": {
+        "heading": "Inter",
+        "body": "Inter"
+    },
+    "css": [
+        "css/theme.css",
+        "css/header.css",
+        "css/footer.css",
+        "css/blocks.css",
+        "css/pages.css"
+    ]
+}

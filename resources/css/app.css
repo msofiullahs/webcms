@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Column/Grid layout block utilities — mobile-first single column, grid at md+ */
+@media (min-width: 768px) {
+    .grid-layout-equal-2 { grid-template-columns: 1fr 1fr; }
+    .grid-layout-equal-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .grid-layout-equal-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .grid-layout-2-1 { grid-template-columns: 2fr 1fr; }
+    .grid-layout-1-2 { grid-template-columns: 1fr 2fr; }
+    .grid-layout-2-1-1 { grid-template-columns: 2fr 1fr 1fr; }
+    .grid-layout-1-1-1 { grid-template-columns: 1fr 1fr 1fr; }
+    .grid-layout-1-1-1-1 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
